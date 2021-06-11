@@ -120,6 +120,7 @@ def run_analysis(input_f, ip_to_qname_map, usage_map):
     # lets go
     for entry in entry_list:
         e = entry.split('\t')
+        print(e)
         src_ip, dst_ip, used_bytes, epoch = e[21], e[22], int(e[-3]), float(e[-1].rstrip("\n"))
      
         # which one is not not princeton ip? in or out?
